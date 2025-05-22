@@ -43,10 +43,19 @@ body {
     align-items: flex-start;
     gap: 8px;
     width: 408px;
-    height: 296px;
+ 
 
     border-radius: 8px;
     background: #fff;
+
+    input,
+    textarea,
+    button {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        letter-spacing: inherit;
+    }
 
     label {
         display: flex;
@@ -96,6 +105,7 @@ body {
         }
     }
     button {
+        font-family: Montserrat;
         color: #fff;
         font-weight: 500;
 
