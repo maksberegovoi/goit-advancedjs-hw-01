@@ -16,7 +16,6 @@ form.addEventListener('input', event => {
         event.target.name === 'message' ? event.target.value : formData.message;
 
     localStorage.setItem(localStorageKey, JSON.stringify(formData));
-    console.log(formData);
 });
 
 form.addEventListener('submit', event => {
