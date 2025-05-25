@@ -24,6 +24,15 @@ form.addEventListener('submit', event => {
         alert('Fill please all fields');
         return;
     }
+
+    const email = formData.email.trim();
+    const message = formData.message.trim();
+    console.log({ email, message })
+    
     localStorage.removeItem(localStorageKey);
     form.reset();
+   
+    formData.email = ''
+    formData.message = ''
+
 });
